@@ -5,19 +5,17 @@ class Ball {
     private int x;
     private int y;
     private BallType type;
-    // Boolean variable is used to confirm the creation of a ball object
-    public static boolean isObjectCreated;
 
     // Constructor to initialize the ball's position and type.
     public Ball(int x, int y, BallType type) {
         this.x = x;
         this.y = y;
         this.type = type;
-        isObjectCreated = true;
+        BallConfirmation.isObjectCreated = true;
     }
 
     // Getter for the ball color
-    public String getColor() {
+    public String getBallColor() {
         return type.getColor();
     }
 

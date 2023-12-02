@@ -14,6 +14,11 @@ class BallPit extends JFrame {
         balls.add(ball);
     }
 
+    // Getter method to retrieve the list of balls
+    public List<Ball> getBalls() {
+        return balls;
+    }
+
     // Overrides the paint method to draw all the balls on the JFrame.
     @Override
     public void paint(Graphics graphics) {

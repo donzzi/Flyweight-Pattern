@@ -1,7 +1,7 @@
 import java.awt.*;
 
 // Represents the type of ball, which determines its color.
-class BallType {
+class BallType implements IColorProvider, IBallTypeProvider {
     private Color c;
 
     // Constructor to initialize the ball type with a specific color.
@@ -10,6 +10,7 @@ class BallType {
     }
 
     // Getter for the ball type color
+    @Override
     public String getColor() {
         if(c == Color.RED) {
             return "Red";
@@ -28,6 +29,15 @@ class BallType {
         }
         else if(c == Color.WHITE) {
             return "White";
+        }
+        else if(c == Color.ORANGE) {
+            return "Orange";
+        }
+        else if(c == Color.PINK) {
+            return "Pink";
+        }
+        else if(c == Color.BLACK) {
+            return "Black";
         }
         return "";
     }
