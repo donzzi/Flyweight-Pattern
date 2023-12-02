@@ -1,7 +1,7 @@
 import java.awt.*;
 
 // Represents a ball with a specific position (x, y) and a type that determines its color.
-class Ball {
+public class Ball {
     private int x;
     private int y;
     private BallType type;

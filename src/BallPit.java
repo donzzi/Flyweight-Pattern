@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.List;
 
 // Represents a ball pit as a JFrame, containing a list of balls to be displayed.
-class BallPit extends JFrame {
+public class BallPit extends JFrame {
     private List<Ball> balls = new ArrayList<>();
 
     // Drops a ball into the pit at the specified position with a given color.

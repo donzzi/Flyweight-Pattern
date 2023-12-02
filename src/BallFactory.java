@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.*;
 
 // Factory class responsible for creating and caching different ball types based on color.
-class BallFactory {
+public class BallFactory {
     static Map<Color, BallType> ballTypes = new HashMap<>();
 
     // Returns a ball type based on the specified color

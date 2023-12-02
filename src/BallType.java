@@ -1,7 +1,7 @@
 import java.awt.*;
 
 // Represents the type of ball, which determines its color.
-class BallType implements IColorProvider, IBallTypeProvider {
+public class BallType implements IColorProvider, IBallTypeProvider {
     private Color c;
 
     // Constructor to initialize the ball type with a specific color.
