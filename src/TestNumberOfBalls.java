@@ -7,6 +7,7 @@ public class TestNumberOfBalls {
         // Drop a ball into the pit and verify that it is added to the list of balls.
         ballPit.dropBall(50, 60, Color.YELLOW);
 
+        // Alternatively, drop multiple balls in the pit
         for(int i = 0; i < 100; i++) {
             ballPit.dropBall(50, 60, Color.YELLOW);
         }
