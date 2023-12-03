@@ -3,7 +3,7 @@ import java.awt.*;
 public class TestBallPit {
     // Constants for the canvas size, number of balls to drop, and number of ball colors.
     static int CANVAS_SIZE = 500;
-    static int BALLS_TO_DROP = 2_000_000;
+    static int BALLS_TO_DROP = 9_000_000;
     static int BALL_COLORS = 5;
 
     public static void main(String[] args) {
