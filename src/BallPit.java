@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.List;
 
 // Represents a ball pit as a JFrame, containing a list of balls to be displayed.
-class BallPit extends JFrame {
+public class BallPit extends JFrame {
     private List<Ball> balls = new ArrayList<>();
 
     // Drops a ball into the pit at the specified position with a given color.
@@ -12,6 +12,11 @@ class BallPit extends JFrame {
         BallType type = BallFactory.getBallType(c);
         Ball ball = new Ball(x, y, type);
         balls.add(ball);
+    }
+
+    // Getter method to retrieve the list of balls
+    public List<Ball> getBalls() {
+        return balls;
     }
 
     // Overrides the paint method to draw all the balls on the JFrame.
